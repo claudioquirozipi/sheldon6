@@ -14,7 +14,11 @@ import MyProfile from "../page/myprofile";
 import OpenData from "../page/openData";
 import StaffAugmentation from "../page/staffAugmentation";
 import Support from "../page/support";
-
+//Auth
+import Registry from "../page/auth/Registry";
+import Login from "../page/auth/Login";
+import ForgetPassword from "../page/auth/ForgetPassword";
+import ResetPassword from "../page/auth/ResetPassword";
 export interface RouterAppProps {}
 
 const RouterApp: React.SFC<RouterAppProps> = () => {
@@ -33,6 +37,10 @@ const RouterApp: React.SFC<RouterAppProps> = () => {
         <Route exact path="/open-data" component={OpenData} />
         <Route exact path="/staff-augmentation" component={StaffAugmentation} />
         <Route exact path="/support" component={Support} />
+        <Route exact path="/auth/registry" component={Registry} />
+        <Route exact path="/auth/login" component={Login} />
+        <Route exact path="/auth/reset-password" component={ResetPassword} />
+        <Route exact path="/auth/forget-password" component={ForgetPassword} />
       </Switch>
     </Routes>
   );
