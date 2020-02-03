@@ -5,14 +5,16 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 `;
 export interface FormAtomsProps {
   children: any;
+  style?: {};
 }
 
 const FormAtoms: React.SFC<FormAtomsProps> = props => {
-  const { children } = props;
-  return <Form>{children}</Form>;
+  const { children, style } = props;
+  return <Form style={style}>{children}</Form>;
 };
 
 export default FormAtoms;

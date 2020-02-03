@@ -16,10 +16,7 @@ const CenterTemplate: React.SFC<CenterTemplateProps> = props => {
   const { children } = props;
   return (
     <Container>
-      <div>
-        <h1>hola center</h1>
-        {children}
-      </div>
+      <div>{children}</div>
     </Container>
   );
 };

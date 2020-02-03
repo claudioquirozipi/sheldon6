@@ -10,9 +10,9 @@ import InputSubmit from "../molecules/inputSubmit";
 import InputContainer from "../containers/InputContainer";
 //Assets
 import iconUser from "../../assets/img/iconUser.svg";
-export interface RegistryOrganismsProps {}
+export interface ResetPasswordProps {}
 
-const RegistryOrganisms: React.SFC<RegistryOrganismsProps> = () => {
+const ResetPassword: React.SFC<ResetPasswordProps> = () => {
   const [value, setValue] = React.useState("");
 
   const getInputValue = (e: any) => {
@@ -27,27 +27,11 @@ const RegistryOrganisms: React.SFC<RegistryOrganismsProps> = () => {
           boxSizing: "border-box"
         }}
       >
-        <h1>
-          Whelcome <br />
-          to sheldon
+        <h1 style={{ textAlign: "center" }}>
+          Create a new
+          <br />
+          password
         </h1>
-        <InputMolecules
-          label="Name "
-          value={value}
-          setValue={getInputValue}
-          error=""
-          icon={iconUser}
-          id="idinput2"
-        />
-        <InputMolecules
-          label="Emal"
-          type="email"
-          value={value}
-          setValue={getInputValue}
-          error=""
-          icon={iconUser}
-          id="idinput2"
-        />
         <InputMolecules
           label="Password"
           type="password"
@@ -66,27 +50,10 @@ const RegistryOrganisms: React.SFC<RegistryOrganismsProps> = () => {
           icon={iconUser}
           id="idinput2"
         />
-        <InputMolecules
-          label="Phome"
-          value={value}
-          setValue={getInputValue}
-          error=""
-          icon={iconUser}
-          id="idinput2"
-        />
-        <InputMolecules
-          label="Company"
-          value={value}
-          setValue={getInputValue}
-          error=""
-          icon={iconUser}
-          id="idinput2"
-        />
-
         <InputSubmit />
       </FormAtoms>
     </CardAtoms>
   );
 };
 
-export default RegistryOrganisms;
+export default ResetPassword;

@@ -1,12 +1,15 @@
 import * as React from "react";
-
+//Organisms
+import RessetPasswordOrganisms from "../../components/organisms/ressetPasswordOrganisms";
+//Template
+import CenterTemplate from "../../components/template/CenterTemplate";
 export interface ResetPasswordProps {}
 
 const ResetPassword: React.SFC<ResetPasswordProps> = () => {
   return (
-    <div>
-      <h1>ResetPassword</h1>
-    </div>
+    <CenterTemplate>
+      <RessetPasswordOrganisms />
+    </CenterTemplate>
   );
 };
 

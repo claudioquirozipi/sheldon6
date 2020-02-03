@@ -59,6 +59,14 @@ const GlobalStyle = createGlobalStyle`
   .tcTertiary {
     color: ${theme.colorText.tertiary} !important;
   }
+  h1 {
+    color: ${theme.colorText.primary};
+  }
+  a {
+    color: ${theme.color.primary};
+    text-decoration: none;
+    font-size: 0.5em;
+  }
 `;
 
 export default GlobalStyle;

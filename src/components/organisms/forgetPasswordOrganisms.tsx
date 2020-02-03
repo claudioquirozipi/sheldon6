@@ -1,5 +1,4 @@
 import * as React from "react";
-
 //Atoms
 import CardAtoms from "../atoms/CardAtoms";
 import FormAtoms from "../atoms/FormAtoms";
@@ -10,9 +9,9 @@ import InputSubmit from "../molecules/inputSubmit";
 import InputContainer from "../containers/InputContainer";
 //Assets
 import iconUser from "../../assets/img/iconUser.svg";
-export interface RegistryOrganismsProps {}
+export interface ForgetPasswordOrganismsProps {}
 
-const RegistryOrganisms: React.SFC<RegistryOrganismsProps> = () => {
+const ForgetPasswordOrganisms: React.SFC<ForgetPasswordOrganismsProps> = () => {
   const [value, setValue] = React.useState("");
 
   const getInputValue = (e: any) => {
@@ -27,18 +26,11 @@ const RegistryOrganisms: React.SFC<RegistryOrganismsProps> = () => {
           boxSizing: "border-box"
         }}
       >
-        <h1>
-          Whelcome <br />
-          to sheldon
+        <h1 style={{ textAlign: "center" }}>
+          Send a URL to <br />
+          you email
         </h1>
-        <InputMolecules
-          label="Name "
-          value={value}
-          setValue={getInputValue}
-          error=""
-          icon={iconUser}
-          id="idinput2"
-        />
+
         <InputMolecules
           label="Emal"
           type="email"
@@ -48,34 +40,9 @@ const RegistryOrganisms: React.SFC<RegistryOrganismsProps> = () => {
           icon={iconUser}
           id="idinput2"
         />
+
         <InputMolecules
-          label="Password"
-          type="password"
-          value={value}
-          setValue={getInputValue}
-          error=""
-          icon={iconUser}
-          id="idinput2"
-        />
-        <InputMolecules
-          label="Re password"
-          type="password"
-          value={value}
-          setValue={getInputValue}
-          error=""
-          icon={iconUser}
-          id="idinput2"
-        />
-        <InputMolecules
-          label="Phome"
-          value={value}
-          setValue={getInputValue}
-          error=""
-          icon={iconUser}
-          id="idinput2"
-        />
-        <InputMolecules
-          label="Company"
+          label="Send"
           value={value}
           setValue={getInputValue}
           error=""
@@ -89,4 +56,4 @@ const RegistryOrganisms: React.SFC<RegistryOrganismsProps> = () => {
   );
 };
 
-export default RegistryOrganisms;
+export default ForgetPasswordOrganisms;
